@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌟 Optional: Smooth background transitions */
+body {
+  @apply bg-dark text-white font-sans;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🌈 Glassmorphism-style card */
+.glass-card {
+  @apply bg-white/30 backdrop-blur-md shadow-xl rounded-xl p-8;
+}
+
+/* 🎯 Centered Page Layout */
+.page-container {
+  @apply min-h-screen flex items-center justify-center px-4;
+}
+
+/* ✨ Button hover effect */
+.btn-primary {
+  @apply bg-primary text-white py-2 rounded-xl w-full hover:bg-indigo-600 transition-all;
+}
+
+/* 🔍 Input field styles */
+.input-field {
+  @apply w-full px-4 py-2 rounded-xl bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-accent transition-all;
+}

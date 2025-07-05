@@ -1,0 +1,125 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(90deg, #1e3a8a, #0ea5e9);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 850px;
+  height: 500px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  display: flex;
+  overflow: hidden;
+}
+
+.login-left {
+  width: 50%;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  padding: 60px 30px;
+  position: relative;
+}
+
+.login-left h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.login-right {
+  width: 50%;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right h2 {
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login-btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #1e40af;
+}
+
+.google-btn {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.google-btn:hover {
+  background: #f1f1f1;
+}
+
+/* Optional floating bubble styles */
+.login-left::before,
+.login-left::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.login-left::before {
+  width: 150px;
+  height: 150px;
+  top: 20px;
+  left: -40px;
+}
+
+.login-left::after {
+  width: 100px;
+  height: 100px;
+  bottom: 40px;
+  right: -30px;
+}
