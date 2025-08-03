@@ -12,7 +12,7 @@ const server = http.createServer(app); // ✅ Define `server`
 
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:3001", // 👈 your frontend Vite port
+  origin: "https://hook-ai-henna.vercel.app", // 👈 your frontend Vite port
   credentials: true
 }));
 
