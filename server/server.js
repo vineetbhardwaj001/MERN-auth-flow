@@ -21,7 +21,7 @@ const authRoutes = require("./routes/authRoutes");
 app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => {
-  res.send("🎸 Auth System & Chord Analysis Server Running");
+  res.send("🎸 Auth System & Chord Analysis Server Runnings");
 });
 
 // MongoDB connection and server start
