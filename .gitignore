@@ -1,0 +1,12 @@
+# Step 1: Remove node_modules from git index
+git rm -r --cached node_modules
+
+# Step 2: Add node_modules to .gitignore
+echo "node_modules/" >> .gitignore
+
+# Step 3: Commit changes
+git add .gitignore
+git commit -m "Remove node_modules and add to gitignore"
+
+# Step 4: Push again
+git push -u origin main
